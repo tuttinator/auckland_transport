@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = AucklandTransport::VERSION
   spec.authors       = ["Caleb Tutty"]
   spec.email         = ["caleb@prettymint.co.nz"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Wrapper for the Auckland Transport API}
+  spec.description   = %q{Make accessing https://api.at.govt.nz/ more pleasant, and more Ruby-esque}
   spec.homepage      = ""
   spec.license       = "MIT"
 

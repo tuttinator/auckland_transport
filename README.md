@@ -1,6 +1,6 @@
 # AucklandTransport
 
-TODO: Write a gem description
+Make accessing https://api.at.govt.nz/ more pleasant, and more Ruby-esque
 
 ## Installation
 
@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You need an API key to access the AT api, which you can get by
+registering here:
+https://api.at.govt.nz/registration/
 
 ## Contributing
 
