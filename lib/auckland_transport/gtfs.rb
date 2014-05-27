@@ -53,6 +53,5 @@ module AucklandTransport
     #     /gtfs/trips/routeid/:route_id
     #
     #
-    #
   end
 end
