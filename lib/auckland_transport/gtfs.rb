@@ -1,14 +1,31 @@
 module AucklandTransport
-  class GTFS
-    #
+  module GTFS
+
     # GET Agencies list
     #     /gtfs/agency
+    def agencies
+      @api_client.get '/gtfs/agency'
+    end
+
     # GET Calendar list
     #     /gtfs/calendar
+    def calendar
+      @api_client.get '/gtfs/calendar'
+    end
+
     # GET Calendar by service id
     #     /gtfs/calendar/serviceId/:service_id
+    def calendar_by_service(service_id)
+      @api_client.get "/gtfs/calendar/serviceId/#{service_id}"
+    end
+
     # GET Calendar exception list
     #     /gtfs/calendarDate
+    def calendar_exceptions
+      @api_client.get '/gtfs/calendarDate'
+    end
+
+
     # GET Calendar exception by service id
     #     /gtfs/calendarDate/serviceId/:service_id
     # GET Routes list
@@ -51,6 +68,7 @@ module AucklandTransport
     #     /gtfs/trips/tripId/:trip_id
     # GET Trips by route id
     #     /gtfs/trips/routeid/:route_id
+    #
     #
     #
   end
