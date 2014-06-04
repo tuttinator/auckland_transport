@@ -28,10 +28,22 @@ module AucklandTransport
 
     # GET Calendar exception by service id
     #     /gtfs/calendarDate/serviceId/:service_id
+    def calendar_service_exceptions(service_id)
+      @api_client.get "/gtfs/calendarDate/serviceId/#{service_id}"
+    end
+
     # GET Routes list
     #     /gtfs/routes
+    def routes
+      @api_client.get '/gtfs/routes'
+    end
+
+    #
     # GET Routes list filtered by id
     #     /gtfs/routes/routeId/:route_id
+    def route_by_id(route_id)
+      @api_client.get "/gtfs/routes/#{route_id}"
+    end
     # GET Routes list filtered by long name
     #     /gtfs/routes/routeLongName/:route_long_name
     # GET Routes list filtered by short name
