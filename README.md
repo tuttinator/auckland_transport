@@ -30,3 +30,9 @@ https://api.at.govt.nz/registration/
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Credits
+
+lazy_load.rb uses the ghost object  pattern elloquently explained by
+Avdi Grimm in his [Ruby Tapas Episode 183](http://www.rubytapas.com/episodes/183-Extracting-Ghost-Load)
+
