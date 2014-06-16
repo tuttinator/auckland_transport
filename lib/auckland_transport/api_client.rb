@@ -9,8 +9,8 @@ module AucklandTransport
     end
 
     # The AT API takes the api key as a query parameter
-    def make_request(url)
-      self.class.get(url, @request_options }
+    def get(url)
+      self.class.get(url, @request_options)
     end
   end
 end
