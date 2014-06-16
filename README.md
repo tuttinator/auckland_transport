@@ -25,7 +25,7 @@ https://api.at.govt.nz/registration/
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/auckland_transport/fork )
+1. Fork it ( http://github.com/{my-github-username}/auckland_transport/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -33,6 +33,6 @@ https://api.at.govt.nz/registration/
 
 ## Credits
 
-lazy_load.rb uses the ghost object  pattern elloquently explained by
+lazy_load.rb uses the ghost object pattern eloquently explained by
 Avdi Grimm in his [Ruby Tapas Episode 183](http://www.rubytapas.com/episodes/183-Extracting-Ghost-Load)
 
