@@ -46,6 +46,9 @@ module AucklandTransport
     end
     # GET Routes list filtered by long name
     #     /gtfs/routes/routeLongName/:route_long_name
+    def route_by_long_name(route_long_name)
+      @api_client.get "/gtfs/routes/routeLongName/#{route_long_name}"
+    end
     # GET Routes list filtered by short name
     #     /gtfs/routes/routeShortName/:route_short_name
     # GET Routes search
