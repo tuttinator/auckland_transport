@@ -100,19 +100,27 @@ module AucklandTransport
 
     # GET Stop by Id
     #     /gtfs/stops/stopId/:stop_id
-
+    def stops_by_stop_id(stop_id)
+      @api_client.get "/gtfs/stops/stopId/#{stop_id}"
+    end
 
     # GET Stop by code
     #     /gtfs/stops/stopCode/:stop_code
-
+    def stops_by_stop_code(stop_code)
+      @api_client.get "/gtfs/stops/stopCode/#{stop_code}"
+    end
 
     # GET Stops search by name
     #     /gtfs/stops/search/:search_text
-
+    def stops_by_name(name)
+      @api_client.get "/gtfs/stops/search/#{name}"
+    end
 
     # GET Stops search by postion
     #     /gtfs/stops/geosearch
-
+    def stops_by_position
+      @api_client.get "/gtfs/stops/geosearch/"
+    end
 
     # GET Stops times by stop id
     #     /gtfs/stopTimes/stopId/:stop_id
