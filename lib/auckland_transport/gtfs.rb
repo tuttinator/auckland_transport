@@ -100,35 +100,35 @@ module AucklandTransport
 
     # GET Stop by Id
     #     /gtfs/stops/stopId/:stop_id
-    
-    
+
+
     # GET Stop by code
     #     /gtfs/stops/stopCode/:stop_code
-    
-    
+
+
     # GET Stops search by name
     #     /gtfs/stops/search/:search_text
-   
-   
+
+
     # GET Stops search by postion
     #     /gtfs/stops/geosearch
-  
-  
+
+
     # GET Stops times by stop id
     #     /gtfs/stopTimes/stopId/:stop_id
- 
- 
+
+
     # GET Stops times by trip id
     #     /gtfs/stopTimes/tripId/:trip_id
-    
-    
+
+
     # GET Trips list
     #     /gtfs/trips
-   
+
     # GET Trips by trip id
     #     /gtfs/trips/tripId/:trip_id
-    
-    
+
+
     # GET Trips by route id
     #     /gtfs/trips/routeid/:route_id
     #
