@@ -123,22 +123,34 @@ module AucklandTransport
     end
 
     # GET Stops times by stop id
-    #     /gtfs/stopTimes/stopId/:stop_id
-
+    #     /gtfs/stoptimes/stopid/:stop_id
+    def stop_times_by_stop_id(stop_id)
+      @api_client.get "/gtfs/stoptimes/stopid/#{stop_id}"
+    end
 
     # GET Stops times by trip id
     #     /gtfs/stopTimes/tripId/:trip_id
-
+    def stop_times_by_trip_id(trip_id)
+      @api_client.get "/gtfs/stopTimes/tripId/#{trip_id}"
+    end
 
     # GET Trips list
     #     /gtfs/trips
+    def trips
+      @api_client.get '/gtfs/trips'
+    end
 
     # GET Trips by trip id
     #     /gtfs/trips/tripId/:trip_id
-
+    def trips_by_trip_id(trip_id)
+      @api_client.get "/gtfs/trips/tripId/#{trip_id}"
+    end
 
     # GET Trips by route id
     #     /gtfs/trips/routeid/:route_id
     #
+    def trips_by_route_id(route_id)
+      @api_client.get "/gtfs/trips/routeid/#{route_id}"
+    end
   end
 end
