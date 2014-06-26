@@ -1,5 +1,7 @@
 # AucklandTransport
 
+WIP - this is not yet ready for use
+
 Make accessing https://api.at.govt.nz/ more pleasant, and more Ruby-esque
 
 ## Installation
