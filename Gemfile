@@ -4,5 +4,10 @@ source 'https://rubygems.org'
 gemspec
 
 group :development do
-  gem 'guard'
+  gem 'pry'
+  gem 'rubocop'
+  gem 'guard-rspec'
+  gem 'guard-rubocop'
+  gem 'terminal-notifier-guard'
+  gem 'coveralls', require: false
 end
