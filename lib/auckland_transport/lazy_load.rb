@@ -1,7 +1,11 @@
 module AucklandTransport
+  # Ghost lazy loading implementation
   module LazyLoad
+    # Reusable macros to be included
     module Macros
+
       private
+
       def lazy_accessor(*names)
         names.each do |name|
           attr_writer name
@@ -18,7 +22,7 @@ module AucklandTransport
     end
 
     attr_accessor :data_source
-    attr_writer   :load_state
+    attr_writer :load_state
 
     def load_state
       @load_state ||= :ghost

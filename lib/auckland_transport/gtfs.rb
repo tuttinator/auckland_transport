@@ -1,4 +1,5 @@
 module AucklandTransport
+  # Google Transport Feed Service endpoints
   module GTFS
 
     # GET Agencies list
@@ -65,7 +66,7 @@ module AucklandTransport
     # GET Routes, search radius around a position (latitude and longitude)
     #     /gtfs/routes/geosearch
     def route_geosearch
-      @api_client.get "/gtfs/routes/geosearch/"
+      @api_client.get '/gtfs/routes/geosearch/'
     end
 
     # GET Routes search by stop id
@@ -95,7 +96,7 @@ module AucklandTransport
     # GET Stops list
     #     /gtfs/stops
     def stops
-      @api_client.get "/gtfs/stops"
+      @api_client.get '/gtfs/stops'
     end
 
     # GET Stop by Id
@@ -119,7 +120,7 @@ module AucklandTransport
     # GET Stops search by postion
     #     /gtfs/stops/geosearch
     def stops_by_position
-      @api_client.get "/gtfs/stops/geosearch/"
+      @api_client.get '/gtfs/stops/geosearch/'
     end
 
     # GET Stops times by stop id
