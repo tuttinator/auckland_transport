@@ -6,4 +6,9 @@ describe AucklandTransport::APIClient do
   it 'is initialized' do
     expect(client).to_not be_nil
   end
+
+  it 'requires an api key' do
+    expect { AucklandTransport::APIClient.new }.to raise_error
+    expect { AucklandTransport::APIClient.new(api_client: nil)}.to raise_error
+  end
 end
