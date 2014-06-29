@@ -1,4 +1,5 @@
 module AucklandTransport
+  # Real time API
   module RealTime
     #
     # Endpoint: /public/realtime/vehiclelocations

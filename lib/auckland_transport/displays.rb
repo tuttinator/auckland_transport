@@ -1,4 +1,5 @@
 module AucklandTransport
+  # Map features outside of the GTFS specification
   module Displays
     # GET Parking Locations
     #     /public/display/parkinglocations

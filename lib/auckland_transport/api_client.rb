@@ -18,7 +18,10 @@ module AucklandTransport
 
     # The AT API takes the api key as a query parameter
     def get(url)
-      self.class.get(url, @request_options)
+      result = JSON.parse self.class.get(url, @request_options).body
+      status = result['status']
+      fail StandardError, "Returned status: #{status}" unless status == 'OK'
+      result['response']
     end
   end
 end

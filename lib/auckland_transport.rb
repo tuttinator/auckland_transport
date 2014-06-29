@@ -6,4 +6,8 @@ require 'auckland_transport/lazy_load'
 require 'auckland_transport/gtfs'
 require 'auckland_transport/displays'
 require 'auckland_transport/real_time'
+
+# models
+require 'auckland_transport/models/route'
+
 require 'auckland_transport/api_client'

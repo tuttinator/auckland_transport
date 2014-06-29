@@ -34,7 +34,10 @@ module AucklandTransport
     # GET Routes list
     #     /gtfs/routes
     def routes
-      get '/gtfs/routes'
+      routes = get('/gtfs/routes')
+      routes.map do |route|
+        Route.from_json(route)
+      end
     end
 
     # GET Routes list filtered by id

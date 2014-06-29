@@ -8,5 +8,7 @@ describe AucklandTransport::GTFS do
         expect(client.routes).to_not be_nil
       end
     end
+
+    # it expects routes to return an array of route objects
   end
 end
