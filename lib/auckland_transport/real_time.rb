@@ -1,5 +1,5 @@
 module AucklandTransport
-  class RealTime
+  module RealTime
     #
     # Endpoint: /public/realtime/vehiclelocations
     #

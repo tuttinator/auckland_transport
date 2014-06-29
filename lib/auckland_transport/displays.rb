@@ -1,5 +1,5 @@
 module AucklandTransport
-  class Displays
+  module Displays
     # GET Parking Locations
     #     /public/display/parkinglocations
     # GET Scheduled works

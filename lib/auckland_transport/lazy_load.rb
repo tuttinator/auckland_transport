@@ -3,7 +3,6 @@ module AucklandTransport
   module LazyLoad
     # Reusable macros to be included
     module Macros
-
       private
 
       def lazy_accessor(*names)
@@ -34,5 +33,3 @@ module AucklandTransport
     end
   end
 end
-
-
