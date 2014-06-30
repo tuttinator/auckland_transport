@@ -1,6 +1,12 @@
 module AucklandTransport
   # Google Transport Feed Service endpoints
   module GTFS
+    # TODO: Refactor this into
+    # 1. Calendar
+    # 2. Routes
+    # 3. Stops
+    # 4. Trips
+
     # GET Agencies list
     #     /gtfs/agency
     def agencies
