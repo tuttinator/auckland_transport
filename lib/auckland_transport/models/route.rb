@@ -1,7 +1,6 @@
 module AucklandTransport
   # Route model
   class Route
-
     PROPERTIES = [:id, :agency, :short_name, :long_name, :description,
                   :type, :url, :colour, :text_colour]
 
@@ -9,13 +8,13 @@ module AucklandTransport
       attr_reader prop
     end
 
-
     def initialize(options = {})
       PROPERTIES.each do |attr|
         instance_variable_set("@#{attr}", options[attr])
       end
     end
 
+    # rubocop:disable MethodLength
     def self.from_json(attrs)
       new(
         id: attrs['route_id'],
@@ -29,6 +28,6 @@ module AucklandTransport
         text_colour: attrs['route_text_color']
       )
     end
-
+    # rubocop:enable MethodLength
   end
 end

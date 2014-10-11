@@ -1,7 +1,6 @@
 module AucklandTransport
   # Agency model
   class Agency
-
     PROPERTIES = [:id, :name, :url, :timezone, :lang, :phone, :fare_url]
 
     PROPERTIES.each do |prop|
@@ -15,13 +14,12 @@ module AucklandTransport
     end
 
     def self.from_json(attrs)
-      mappings =PROPERTIES.inject({}) do |hash, prop|
+      mappings = PROPERTIES.reduce({}) do |hash, prop|
         hash.merge("agency_#{prop}".to_sym => prop)
       end
-      new(attrs.inject({}) do |hash, (key, value)|
+      new(attrs.reduce({}) do |hash, (key, value)|
         hash.merge(mappings[key.to_sym] => value)
       end)
     end
-
   end
 end
