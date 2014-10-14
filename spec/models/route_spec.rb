@@ -1,4 +1,4 @@
-require 'auckland_transport/models/route'
+require 'spec_helper'
 
 describe AucklandTransport::Route do
 
